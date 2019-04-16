@@ -242,8 +242,7 @@ extension CAPSPageMenu {
         
         currentOrientationIsPortrait = UIDevice.current.orientation.isPortrait
         
-        if UIDevice.current.orientation != UIDeviceOrientation.unknown {
-            if (oldCurrentOrientationIsPortrait && UIDevice.current.orientation.isLandscape) || (!oldCurrentOrientationIsPortrait && UIDevice.current.orientation.isPortrait) {
+        if (oldCurrentOrientationIsPortrait && UIDevice.current.orientation.isLandscape) || (!oldCurrentOrientationIsPortrait && UIDevice.current.orientation.isPortrait) {
             didLayoutSubviewsAfterRotation = true
             
             //Resize menu items if using as segmented control
