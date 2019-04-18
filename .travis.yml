@@ -1,0 +1,4 @@
+language: swift 
+osx_image: xcode10.2
+xcode_project: PageMenu.xcodeproj 
+xcode_scheme: PageMenuFramework
